@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Roboto&family=Solway:wght@300;400;500;700;800&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.aboutCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: azure;
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+/* slide-left hidden state */
+.slide-left {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+/* slide-left active state triggers animation */
+.slide-left.active {
+  animation: slideInLeft 0.8s forwards ease-out;
+}
+
+.about {
+  font-family: "Solway", arial;
+  font-size: 25px;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.about-txt {
+  font-family: "Reddit Sans", arial;
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  width: 80%;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-txt {
+    font-size: 16px;
+  }
+}
+
+.services-grid-container {
+  padding: 2rem;
+  background-color: azure;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+/* slide-right hidden state */
+.slide-right {
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+/* slide-right active state triggers animation */
+.slide-right.active {
+  animation: slideInRight 0.8s forwards ease-out;
+  animation-delay: 0.2s;
+}
+
+.services-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.service-card {
+  position: relative;
+  background: azure;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #111;
+}
+
+.service-card p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.card-number {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #111;
+  color: white;
+  padding: 0.3rem 0.7rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.about-img {
+  width: 30px;
+  height: 30px;
+}
+
+.service-card-header {
+  font-family: 'Solway', sans-serif;
+}
+
+.service-card-paragraph {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .service-card {
+    padding: 1rem;
+  }
+
+  .card-number {
+    font-size: 0.8rem;
+  }
+}
+
+/* Keyframes for sliding from left */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Keyframes for sliding from right */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

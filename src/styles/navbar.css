@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Roboto&family=Solway:wght@300;400;500;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainNavBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #217b7e;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 57px;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+/* Left: Logo */
+.nav-left {
+  flex: 1;
+}
+
+.BigNavPic {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* Middle: Nav links */
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-family: "Reddit Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.navlink {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 57px; /* vertically center clickable area */
+  transition: text-decoration 0.2s ease;
+}
+
+.navlink:hover {
+  text-decoration: underline;
+}
+
+/* Right: Social icons */
+.nav-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  align-items: center;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  filter: brightness(0) invert(1); /* white icons */
+  transition: filter 0.3s ease;
+}
+
+.social-icon:hover {
+  filter: brightness(0) invert(0.7);
+}
+
+/* Hamburger button - hidden on desktop */
+.menuToggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.menuToggle:focus {
+  outline: none;
+}
+
+.menuToggle .bar {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Animate hamburger to X when open */
+.menuToggle.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menuToggle.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menuToggle.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  /* Hide center nav links by default on mobile */
+  .nav-center {
+    position: fixed;
+    top: 57px;
+    left: 0;
+    right: 0;
+    background-color: #217b7e;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .rightIcons {
+    display: none;
+  }
+
+  /* Show nav links when menu is open */
+  .nav-center.open {
+    max-height: 300px; /* enough height to show all links */
+  }
+
+  /* Show hamburger button */
+  .menuToggle {
+    display: flex;
+  }
+
+  /* Adjust social icons on mobile */
+  .nav-right {
+    gap: 10px;
+  }
+}

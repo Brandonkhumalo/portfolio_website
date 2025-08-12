@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Roboto&family=Solway:wght@300;400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+}
+
+.projectsContainer {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.projectsContainer.slideUp {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery {
+  display: grid;
+  gap: 100px;
+  grid-template-columns: repeat(1, 1fr); /* Mobile default: 1 column */
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr); /* Tablets and up: 3 columns */
+  }
+}
+
+.card {
+  position: relative;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* Overlay hidden by default */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0); /* no black initially */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  opacity: 0;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+/* Desktop hover effect */
+.card:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+
+/* Mobile tap effect */
+.card.active .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+
+.overlay img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: white;
+  padding: 5px;
+  transition: transform 0.2s ease;
+}
+
+.overlay img:hover {
+  transform: scale(1.1);
+}
+
+.card-heading{
+    font-family: "Arial", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.card-texts{
+    font-family: "Reddit Sans", 'Arial';
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    margin-top: 10px;
+    text-align: center;
+}

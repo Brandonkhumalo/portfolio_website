@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Roboto&family=Solway:wght@300;400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+}
+
+.homeCont {
+    margin-top: 180px;
+    background-color: white;
+}
+
+.homeTop {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeheader {
+    font-family: "Solway", sans-serif;
+    font-weight: 800;
+    font-size: 37px;
+}
+
+.myPicture {
+    padding-top: 30px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.introHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.introwidth {
+    width: 80%;
+}
+
+.myname {
+    font-family: "Solway", arial;
+    font-size: 27px;
+    font-weight: 700;
+    color: black;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: orange;
+    animation: blink 0.75s step-end infinite;
+    vertical-align: bottom;
+    height: 1em; /* same height as text */
+}
+
+@keyframes blink {
+    50% { background-color: transparent; }
+}
+
+.myintro {
+    font-family: "Reddit Sans", 'Arial';
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+
+.download_cv {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: white;
+    color: black;
+    border-radius: 9999px;
+    border: 2px solid black;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+}
+
+.download_cv:hover {
+    background-color: #cccfcc;
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+    .homeCont { margin-top: 150px; }
+    .introwidth { width: 95%; }
+    .myintro { font-size: 16px; }
+    .homeheader { width: 82%; font-size: 30px; }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    .introwidth { width: 90%; }
+    .myintro { font-size: 18px; }
+    .homeheader { font-size: 30px; }
+}
+
+@media (min-width: 769px) and (max-width: 1040px) {
+    .introwidth { width: 65%; }
+    .myintro { font-size: 18px; }
+}
+
+@media only screen and (min-width: 1041px) {
+    .homeheader { font-size: 40px; }
+    .myintro { font-size: 18px; }
+}

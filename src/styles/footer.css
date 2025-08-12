@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+}
+
+.footerContainer{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Clogo{
+    width: 120px;
+    margin-top: 30px;
+}
+
+.motor div{
+    font-family: "Reddit Sans", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000040;
+
+    padding-bottom: 20px;
+    margin-top: -20px;
+    text-align: center;
+}
+
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+    padding-bottom: 30px;
+}
+
+.Sicons:hover{
+    opacity: 0.8;
+}
+
+@media (min-width: 769px) and (max-width: 1040px) {
+    .motor div{
+        font-size: 18px;
+    }
+}
+
+.copyright{
+    font-family: 'Roboto', 'Arial', sans-serif;
+    color: black;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
