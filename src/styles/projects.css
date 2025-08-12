@@ -20,7 +20,7 @@
   display: grid;
   gap: 100px;
   grid-template-columns: repeat(1, 1fr); /* Mobile default: 1 column */
-  padding-left: 7%;
+  padding-left: 4%;
 }
 
 @media (min-width: 768px) {
