@@ -4,11 +4,15 @@
     margin: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+
 .homeCont {
     margin-top: 180px;
     background-color: white;
-    width: 93%;
-    padding-left: 4%;
+    width: 100%;
 }
 
 .homeTop {

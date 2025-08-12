@@ -17,7 +17,7 @@
 /* slide-left hidden state */
 .slide-left {
   opacity: 0;
-  transform: translateX(-100px);
+  transform: translateX(-20px);
 }
 
 /* slide-left active state triggers animation */
@@ -54,7 +54,6 @@
   background-color: azure;
   padding-top: 20px;
   padding-bottom: 50px;
-  padding-left: 7%;
   opacity: 0;
   transform: translateX(100px);
 }
@@ -62,7 +61,7 @@
 /* slide-right hidden state */
 .slide-right {
   opacity: 0;
-  transform: translateX(100px);
+  transform: translateX(20px);
 }
 
 /* slide-right active state triggers animation */
