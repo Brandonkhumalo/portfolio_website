@@ -4,7 +4,7 @@ import Bee from '../assets/profile.jpg';
 import download from '../assets/download_svg.svg';
 import AboutMe from '../components/About-me';
 import Projects from '../components/projects';
-import cv from '../assets/Brandon_cv(fullstack).pdf';
+import cv from '../assets/Brandon-cv-fullstack.pdf';
 
 function Home() {
     const text = "Hi! I'm Brandon Khumalo.";

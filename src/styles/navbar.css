@@ -116,6 +116,7 @@
 @media (max-width: 600px) {
   /* Hide center nav links by default on mobile */
   .nav-center {
+    display: none; /* Fully hidden until menu is open */
     position: fixed;
     top: 57px;
     left: 0;
@@ -124,27 +125,21 @@
     flex-direction: column;
     gap: 15px;
     padding: 15px 20px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-  }
-
-  .rightIcons {
-    display: none;
   }
 
   /* Show nav links when menu is open */
   .nav-center.open {
-    max-height: 300px; /* enough height to show all links */
+    display: flex; /* Show links only when open */
+  }
+
+  /* Hide right icons on mobile */
+  .nav-right {
+    display: none;
   }
 
   /* Show hamburger button */
   .menuToggle {
     display: flex;
   }
-
-  /* Adjust social icons on mobile */
-  .nav-right {
-    gap: 10px;
-  }
 }
+

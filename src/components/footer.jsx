@@ -3,6 +3,7 @@ import fb from '../assets/fb.svg';
 import insta from '../assets/insta.svg';
 import tk from '../assets/tiktok.svg';
 import linkedin from '../assets/linkedin.svg';
+import githubIcon from '../assets/github.svg';
 
 function Footer() {
     return(
@@ -13,6 +14,9 @@ function Footer() {
                     <div>up one day at a time</div>
                 </div>
                 <div className="icons">
+                    <a href="https://github.com/Brandonkhumalo" target="_blank" rel="noopener noreferrer">
+                        <img src={githubIcon} alt="Github" className="Sicons1"/>
+                    </a>
                     <a href="https://www.facebook.com/people/Brandon-Khumalo/100047518344256/" target="_blank" rel="noopener noreferrer">
                         <img src={fb} alt="Facebook" className="Sicons"/>
                     </a>

@@ -32,6 +32,11 @@
     padding-bottom: 30px;
 }
 
+.Sicons1{
+    width: 40px;
+    align-content: center;
+}
+
 .Sicons:hover{
     opacity: 0.8;
 }
