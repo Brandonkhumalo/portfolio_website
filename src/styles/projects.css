@@ -8,6 +8,7 @@
   opacity: 0;
   transform: translateY(100px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  width: 100%;
 }
 
 .projectsContainer.slideUp {
@@ -19,8 +20,7 @@
   display: grid;
   gap: 100px;
   grid-template-columns: repeat(1, 1fr); /* Mobile default: 1 column */
-  margin-left: 5%;
-  margin-right: 5%;
+  padding-left: 7%;
 }
 
 @media (min-width: 768px) {

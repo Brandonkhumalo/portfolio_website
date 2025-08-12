@@ -89,8 +89,7 @@ function Projects() {
     return (
         <div
             ref={containerRef}
-            className={`projectsContainer ${isVisible ? "slideUp" : ""}`}
-        >
+            className={`projectsContainer ${isVisible ? "slideUp" : ""}`}>
             <div className="about">Projects</div>
 
             <div className="gallery">
