@@ -14,7 +14,7 @@ function Footer() {
                     <div>up one day at a time</div>
                 </div>
                 <div className="icons">
-                    <a href="brandonkhumz40@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <a href="mailto:brandonkhumz40@gmail.com" target="_blank" rel="noopener noreferrer">
                         <img src={email} alt="email" className="Sicons1"/>
                     </a>
                     <a href="https://github.com/Brandonkhumalo" target="_blank" rel="noopener noreferrer">
