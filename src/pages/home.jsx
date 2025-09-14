@@ -39,6 +39,9 @@ function Home() {
         <div className="homeCont">
             <div className="homeTop">
                 <div className="homeheader">
+                    Software Developer
+                </div>
+                <div className="homeheader2">
                     Mobile and Backend Developer
                 </div>
                 <img src={Bee} alt='My Picture' className='myPicture' />
@@ -51,9 +54,10 @@ function Home() {
                 </div>
                 <div className='introwidth'>
                     <div className='myintro'>
-                        a passionate software developer with a love for crafting elegant solutions to complex problems.  
-                        I thrive on turning innovative ideas into reality through the power of code. I'm quietly confident, 
-                        naturally curious, and perpetually working on improving my chops.
+                        A passionate software developer with love for crafting elegant solutions to complex problems.  
+                        Quietly confident, naturally curious, and perpetually working on improving my chops. Great fullstack
+                        development isn’t just about writing code—it’s about crafting seamless, intuitive experiences that users 
+                        love. Every pixel, every interaction, and every animation tells a story—make it a masterpiece.
                     </div>
                 </div>
 

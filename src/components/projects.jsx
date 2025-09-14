@@ -7,6 +7,7 @@ import link from '../assets/link.svg';
 import github from '../assets/github.svg';
 import oba from '../assets/oba_logo.png';
 import Ballot from '../assets/Ballot_BLaze.png';
+import Service from '../assets/Service_Lane.png';
 
 const cards = [
     {
@@ -44,6 +45,15 @@ const cards = [
         heading: "Ballot Blaze",
         text1: "Backend implementation of an Online Poll System. The system enables real-time voting functionality with optimized database design, scalable APIs.",
         text2: "",
+    },
+    {
+        id: 4,
+        bgImage: Service,
+        link1: "https://github.com/Brandonkhumalo/ServiceLane",
+        link2: "https://github.com/Brandonkhumalo/ServiceLane",
+        heading: "Service Lane",
+        text1: "Service Lane is a fullstack project that is designed to connect clients with businesses offering local services.",
+        text2: "(ONGOING PROJECT). ",
     },
 ];
 

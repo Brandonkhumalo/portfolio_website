@@ -28,6 +28,12 @@ html, body {
     font-size: 37px;
 }
 
+.homeheader2 {
+    font-family: "Solway", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+
 .myPicture {
     padding-top: 30px;
     width: 200px;
@@ -79,7 +85,7 @@ html, body {
 
 .download_cv {
     font-family: 'Roboto', sans-serif;
-    margin-top: 10px;
+    margin-top: 20px;
     display: inline-flex;
     align-items: center;
     padding: 8px 16px;
@@ -103,12 +109,19 @@ html, body {
     .introwidth { width: 95%; }
     .myintro { font-size: 16px; }
     .homeheader { width: 82%; font-size: 30px; }
+    .homeheader2 {
+        width: 82%;
+        font-size: 20px;
+    }
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
     .introwidth { width: 90%; }
     .myintro { font-size: 18px; }
     .homeheader { font-size: 30px; }
+    .homeheader2 {
+        font-size: 20px;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1040px) {
@@ -119,4 +132,7 @@ html, body {
 @media only screen and (min-width: 1041px) {
     .homeheader { font-size: 40px; }
     .myintro { font-size: 18px; }
+    .homeheader2 {
+        font-size: 28px;
+    }
 }

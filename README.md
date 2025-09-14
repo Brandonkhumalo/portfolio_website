@@ -6,7 +6,7 @@ Welcome to my personal portfolio website! This site showcases my journey as an e
 
 ## About Me
 
-I am an entry-level mobile and backend developer with expertise in Java for Android development and Django for backend systems. I have been actively building projects to sharpen my skills. My top skills include mobile app development, backend API integration, and problem-solving.
+I am an entry-level mobile and backend developer with expertise in Java for Android development and Django for backend systems. I recently earned the Google IT Support certificate, which has strengthened my foundation in troubleshooting and technical support. I have built multiple hands-on projects, demonstrating skills in mobile app development, backend API integration, and problem-solving. I am passionate about creating scalable, efficient, and user-friendly applications while continuously learning and adapting to new technologies.
 
 What sets me apart is my ability to build scalable, efficient, and user-friendly applications while continuously learning and adapting to new technologies.
 
@@ -30,9 +30,6 @@ I am eager to contribute to a team where I can apply my skills to develop high-q
 ## Technologies Used
 
 - **Frontend:** React.js, CSS3, HTML5
-- **Backend:** Django (for API development in some projects)
-- **Mobile Development:** Java for Android
-- **Tools:** Git, GitHub, REST APIs
 
 ---
 

@@ -5,24 +5,6 @@ import grad from '../assets/grad.svg';
 import tools from '../assets/tools.svg';
 
 function AboutMe() {
-  const services = [
-    {
-      image: coding,
-      title: "Languages",
-      description: "Python, Django, SQL, Java, JavaScript, React, HTML, CSS",
-    },
-    {
-      image: tools,
-      title: "Tools",
-      description: "Git & Github, Docker, AWS, Firebase, VS Code, Android Studio",
-    },
-    {
-      image: grad,
-      title: "Education",
-      description: "Software Development Bootcamp, certified AWS Cloud practitioner, Udemy Mobile Development",
-    }
-  ];
-
   const aboutRef = useRef(null);
   const servicesRef = useRef(null);
 
@@ -55,38 +37,68 @@ function AboutMe() {
 
   return (
     <div className='abountContainer'>
-        <div
-            className={`aboutCont slide-left ${aboutActive ? 'active' : ''}`}
-            ref={aboutRef}>
-            <div className="about">About Me</div>
-            <div className='about-txt'>
-            I am an entry-level mobile and backend developer with expertise in Java for Android development and Django
-            for backend systems. I have been actively building projects  to sharpen my skills.  My top skills include mobile app
-            development, backend API integration, and problem-solving. What sets me apart is my ability to build scalable,
-            efficient, and user-friendly applications while continuously learning and adapting to new technologies.
-            </div>
-            <br />
-            <div className='about-txt'>
-            I am eager to contribute to a team where I can apply my skills to develop high-quality applications that improve user
-            experiences and streamline business processes. My strong work ethic, quick learning ability, and commitment to writing
-            clean, maintainable code make me a valuable asset.
-            </div>
+      <div
+        className={`aboutCont slide-left ${aboutActive ? 'active' : ''}`}
+        ref={aboutRef}>
+        <div className="about">About Me</div>
+        <div className='about-txt'>
+          I am an entry-level mobile and backend developer with expertise in Java for Android development and
+          Django for backend systems. I recently earned the Google IT Support certificate, which has strengthened
+          my foundation in troubleshooting and technical support. I have built multiple hands-on projects,
+          demonstrating skills in mobile app development, backend API integration, and problem-solving. I am
+          passionate about creating scalable, efficient, and user-friendly applications while continuously learning
+          and adapting to new technologies.
+        </div>
+        <br />
+        <div className='about-txt'>
+          I am eager to contribute to a team where I can apply my skills to develop high-quality applications that improve user
+          experiences and streamline business processes. My strong work ethic, quick learning ability, and commitment to writing
+          clean, maintainable code make me a valuable asset.
+        </div>
+      </div>
+
+      {/* NEW SECTION BELOW ABOUT */}
+      <div className="container">
+        <div className="top-section">
+          <div className="card">
+            <h2>Education</h2>
+            <ul>
+              <li className='top-section-texts'>Certificate in Pro Dev Backend <a href="https://savanna.alxafrica.com/certificates/FYJxeN9MHy" target='_blank'>[ALX Africa]</a></li>
+            </ul>
+          </div>
+
+          <div className="card">
+            <h2>Certifications / Short Courses</h2>
+            <ul>
+              <li className='top-section-texts'>Java Android App Development <a href="http://ude.my/UC-54792f39-1bb2-4b4b-a40b-5ccf044df08" target='_blank'>[Udemy]</a></li>
+              <li className='top-section-texts'>AWS Cloud Practitioner dd345bb77dc04f92ac085a3dcf5f31b5 <a href="https://aws.amazon.com/verification" target='_blank'>[AWS]</a></li>
+              <li className='top-section-texts'>Scientific computing with python <a href="https://freecodecamp.org/cerification/Brandon_Khumalo/scientific-computing-with-python-v7" target='_blank'>[Freecodecamp]</a></li>
+              <li className='top-section-texts'>Google IT Support <a href="#">[Coursera]</a></li>
+              <li className='top-section-texts'>Professional Foundations <a href="https://savanna.alxafrica.com/certificates/ZfNnpRe97r" target='_blank'>[ALX Africa]</a></li>
+            </ul>
+          </div>
         </div>
 
-        <div
-            className={`services-grid-container slide-right ${servicesActive ? 'active' : ''}`}
-            ref={servicesRef}>
-            <div className="services-grid">
-            {services.map((service, index) => (
-                <div className="service-card" key={index}>
-                <div className="card-number">{String(index + 1).padStart(2, '0')}</div>
-                <img className='about-img' src={service.image} alt={service.title} />
-                <h3 className="service-card-header">{service.title}</h3>
-                <p className="service-card-paragraph">{service.description}</p>
-                </div>
-            ))}
-            </div>
+        <div className="card skills-card">
+          <h2>Skills & Technologies</h2>
+          <div className="skills-grid">
+            <div className="skill top-section-texts">Python</div>
+            <div className="skill top-section-texts">Django</div>
+            <div className="skill top-section-texts">Websockets</div>
+            <div className="skill top-section-texts">Rest Apis</div>
+            <div className="skill top-section-texts">Java</div>
+            <div className="skill top-section-texts">Retrofit</div>
+            <div className="skill top-section-texts">Firebase</div>
+            <div className="skill top-section-texts">SQL</div>
+            <div className="skill top-section-texts">AWS</div>
+            <div className="skill top-section-texts">Docker</div>
+            <div className="skill top-section-texts">Git</div>
+            <div className="skill top-section-texts">Github</div>
+            <div className="skill top-section-texts">Swagger</div>
+            <div className="skill top-section-texts">Graddle</div>
+          </div>
         </div>
+      </div>
     </div>
   );
 }

@@ -4,6 +4,7 @@ import insta from '../assets/insta.svg';
 import tk from '../assets/tiktok.svg';
 import linkedin from '../assets/linkedin.svg';
 import githubIcon from '../assets/github.svg';
+import email from '../assets/email.svg';
 
 function Footer() {
     return(
@@ -14,6 +15,9 @@ function Footer() {
                     <div>up one day at a time</div>
                 </div>
                 <div className="icons">
+                    <a href="brandonkhumz40@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <img src={email} alt="email" className="Sicons1"/>
+                    </a>
                     <a href="https://github.com/Brandonkhumalo" target="_blank" rel="noopener noreferrer">
                         <img src={githubIcon} alt="Github" className="Sicons1"/>
                     </a>
@@ -26,7 +30,7 @@ function Footer() {
                     <a href="https://www.tiktok.com/@pitchmellowbrandon?_t=ZS-8yoqSitmwug&_r=1" target="_blank" rel="noopener noreferrer">
                         <img src={tk} alt="Tiktok" className="Sicons"/>
                     </a>
-                    <a href="www.linkedin.com/in/brandon-khumalo04" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/brandon-khumalo04" target="_blank" rel="noopener noreferrer">
                         <img src={linkedin} alt="Linkedin" className="Sicons"/>
                     </a>
                 </div>
