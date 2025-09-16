@@ -40,7 +40,7 @@ const cards = [
     {
         id: 4,
         bgImage: Ballot,
-        link1: "https://alx-project-nexus-production-acc9.up.railway.app/api/docs/",
+        link1: "https://efficient-spontaneity-production.up.railway.app/api/docs/",
         link2: "https://github.com/Brandonkhumalo/alx-project-nexus",
         heading: "Ballot Blaze",
         text1: "Backend implementation of an Online Poll System. The system enables real-time voting functionality with optimized database design, scalable APIs.",
