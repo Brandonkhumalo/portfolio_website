@@ -42,12 +42,13 @@ function AboutMe() {
         ref={aboutRef}>
         <div className="about">About Me</div>
         <div className='about-txt'>
-          I am an entry-level mobile and backend developer with expertise in Java for Android development and
-          Django for backend systems. I recently earned the Google IT Support certificate, which has strengthened
-          my foundation in troubleshooting and technical support. I have built multiple hands-on projects,
-          demonstrating skills in mobile app development, backend API integration, and problem-solving. I am
-          passionate about creating scalable, efficient, and user-friendly applications while continuously learning
-          and adapting to new technologies.
+          I am the CTO and Lead Software Engineer at Tishanyq Digital, leading the development of scalable, high-performance web 
+          and mobile applications. I have extensive experience in full-stack development using Java, Android, Django, Python, 
+          JavaScript, TypeScript, React, Node.js, SQL, and AWS, with a strong focus on building user-centric and innovative 
+          solutions. I oversee both the technical strategy and execution, guiding the team in delivering robust applications, 
+          optimizing systems, and implementing cloud-based solutions. I am passionate about driving technology innovation, 
+          mentoring teams, and leveraging modern technologies to solve real-world problems while continuously learning and 
+          adapting to emerging tools and frameworks.
         </div>
         <br />
         <div className='about-txt'>
