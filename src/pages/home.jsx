@@ -42,7 +42,7 @@ function Home() {
                     Software Developer
                 </div>
                 <div className="homeheader2">
-                    Mobile and Backend Developer
+                    Fullstack Developer
                 </div>
                 <img src={Bee} alt='My Picture' className='myPicture' />
             </div>
